@@ -1,0 +1,128 @@
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.Body-css {
+  text-align: center;
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  font-size: calc(10px + 2vmin);
+  color: #282c34;
+}
+
+.header-css {
+  text-align: center;
+  background-color: white;
+  padding-top: 20px;
+  max-height: fit-content;
+}
+
+.subheader-css {
+  margin-left: 370px;
+  margin-top: -30px;
+}
+
+.border-line {
+  border-bottom: 1px solid;
+  border-color: #57B86C;
+  padding-bottom: 10px;
+}
+
+input[type='text'] {
+  width:1.5em;
+  height: 1.5em;
+  text-align: center;
+  font-weight:bold;
+  font-size: 32px;
+  margin-left: 2px;
+  border: 1px solid;
+  border-color: #E4E9E5;
+  text-transform:uppercase;
+  caret-color: transparent;
+  outline-width: 0;
+}
+
+
+.button-css {
+    background-color: #6aaa64;
+    width: 120px;
+    height: 40px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    border-radius: 3px;
+}
+
+.keyboard-css {
+  margin-left: 5px;
+}
+
+.mg-top-50 {
+  margin-top: 50px;
+}
+
+.mg-left-20 {
+  margin: 20px;
+}
+
+.div-css {
+  align-self: center;
+  max-width: 350px;
+  margin-top: 30px;
+}
+
+.msg-css {
+  width: 10em;
+  height: fit-content;
+  max-height: fit-content;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.toast {
+  visibility: hidden;
+  min-width: 250px;
+  margin-left: -125px;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 2px;
+  padding: 16px;
+  position: fixed;
+  z-index: 1;
+  left: 50%;
+  top: 150px;
+  font-size: 17px;
+}
+
+.show {
+  visibility: visible;
+  animation: shake 1.5s;
+  animation-iteration-count: 5;
+}
+
+
+
+@keyframes shake {
+  0% { transform: translate(1px, 1px) rotate(0deg); }
+  40% { transform: translate(1px, -1px) rotate(1deg); }
+  70% { transform: translate(2px, 1px) rotate(-1deg); }
+  100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
